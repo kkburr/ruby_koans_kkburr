@@ -10,7 +10,7 @@ class AboutObjects < EdgeCase::Koan
   end
 
   def test_objects_can_be_converted_to_strings
-    assert_equal __, 123.to_s
+    assert_equal "456", 123.to_s
     assert_equal __, nil.to_s
   end
 
