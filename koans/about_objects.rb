@@ -31,7 +31,7 @@ class AboutObjects < EdgeCase::Koan
   end
 
   def test_some_system_objects_always_have_the_same_id
-    assert_equal __, false.object_id
+    assert_equal 75, false.object_id
     assert_equal __, true.object_id
     assert_equal __, nil.object_id
   end
