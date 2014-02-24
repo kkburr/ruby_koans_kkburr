@@ -21,7 +21,7 @@ class AboutArrays < EdgeCase::Koan
     assert_equal [1, 2, 333], array
   end
 
-  def test_accessing_array_elements
+  def test_accessing_array_elements 65851838
     array = [:peanut, :butter, :and, :jelly]
 
     assert_equal :peanut, array[0]
