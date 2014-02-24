@@ -21,15 +21,15 @@ class AboutArrays < EdgeCase::Koan
     assert_equal [1, 2, 333], array
   end
 
-  def test_accessing_array_elements
+  def test_accessing_array_elements 65851838
     array = [:peanut, :butter, :and, :jelly]
 
-    assert_equal __, array[0]
-    assert_equal __, array.first
-    assert_equal __, array[3]
-    assert_equal __, array.last
-    assert_equal __, array[-1]
-    assert_equal __, array[-3]
+    assert_equal :peanut, array[0]
+    assert_equal :peanut, array.first
+    assert_equal :jelly, array[3]
+    assert_equal :jelly, array.last
+    assert_equal :jelly, array[-1]
+    assert_equal :butter, array[-3]
   end
 
   def test_slicing_arrays
