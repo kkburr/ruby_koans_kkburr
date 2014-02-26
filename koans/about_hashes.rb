@@ -22,8 +22,8 @@ class AboutHashes < EdgeCase::Koan
 
   def test_accessing_hashes_with_fetch
     hash = { :one => "uno" }
-    assert_equal __, hash.fetch(:one)
-    assert_raise(___) do
+    assert_equal "uno", hash.fetch(:one)
+    assert_raise(KeyError) do
       hash.fetch(:doesnt_exist)
     end
 
@@ -37,7 +37,7 @@ class AboutHashes < EdgeCase::Koan
     hash[:one] = "eins"
 
     expected = { :one => __, :two => "dos" }
-    assert_equal __, hash
+    assert_equal {:one=>"eins", :two=>"dos"}, hash
 
     # Bonus Question: Why was "expected" broken out into a variable
     # rather than used as a literal?
