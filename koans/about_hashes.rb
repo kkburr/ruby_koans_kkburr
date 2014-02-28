@@ -80,7 +80,7 @@ class AboutHashes < EdgeCase::Koan
     hash1 = Hash.new
     hash1[:one] = 1
 
-    assert_equal __, hash1[:one]
+    assert_equal 1, hash1[:one]
     assert_equal __, hash1[:two]
 
     hash2 = Hash.new("dos")
