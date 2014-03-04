@@ -31,8 +31,8 @@ class AboutStrings < EdgeCase::Koan
     a = %(flexible quotes can handle both ' and " characters)
     b = %!flexible quotes can handle both ' and " characters!
     c = %{flexible quotes can handle both ' and " characters}
-    assert_equal __, a == b
-    assert_equal __, a == c
+    assert_equal true, a == b
+    assert_equal true, a == c
   end
 
   def test_flexible_quotes_can_handle_multiple_lines
@@ -40,9 +40,8 @@ class AboutStrings < EdgeCase::Koan
       It was the best of times,
       It was the worst of times.
       }
-    assert_equal __, long_string.length
-
-    assert_equal __, long_string.lines.count
+    assert_equal 72, long_string.length
+    assert_equal 4, long_string.lines.count
   end
 
   def test_here_documents_can_also_handle_multiple_lines
