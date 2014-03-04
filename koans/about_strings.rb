@@ -55,22 +55,22 @@ EOS
 
   def test_plus_will_concatenate_two_strings
     string = "Hello, " + "World"
-    assert_equal __, string
+    assert_equal "Hello, World", string
   end
 
   def test_plus_concatenation_will_leave_the_original_strings_unmodified
     hi = "Hello, "
     there = "World"
     string = hi + there
-    assert_equal __, hi
-    assert_equal __, there
+    assert_equal "Hello, ", hi
+    assert_equal "World", there
   end
 
   def test_plus_equals_will_concatenate_to_the_end_of_a_string
     hi = "Hello, "
     there = "World"
     hi += there
-    assert_equal __, hi
+    assert_equal "Hello, World", hi
   end
 
   def test_plus_equals_also_will_leave_the_original_string_unmodified
