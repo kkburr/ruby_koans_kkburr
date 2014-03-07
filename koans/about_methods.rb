@@ -128,7 +128,6 @@ class AboutMethods < EdgeCase::Koan
     end
 
     assert_match /private method `my_private_method' called for \#\<AboutMethods:.*/, exception.message
-    #assert_match "private method `my_private_method' called for...", exception.message
   end
 
   # ------------------------------------------------------------------
