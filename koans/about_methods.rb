@@ -127,10 +127,8 @@ class AboutMethods < EdgeCase::Koan
 
   class Dog
     def name
-      "Fido"
+      "Fido the Dog"
     end
-
-    private
 
     def tail
       "tail"
