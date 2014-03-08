@@ -50,7 +50,7 @@ class AboutRegularExpressions < EdgeCase::Koan
   # ------------------------------------------------------------------
 
   def test_character_classes_give_options_for_a_character
-    animals = ["cat", "bat", "rat", "zat"]
+    animals = ["cat", "bat", "rat", "zat", "brat"]
     assert_equal __, animals.select { |a| a[/[cbr]at/] }
   end
 
