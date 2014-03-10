@@ -11,13 +11,9 @@ class AboutMethods < EdgeCase::Koan
   end
 
   def test_calling_global_methods_without_parentheses
-<<<<<<< HEAD
-    result = my_global_method 2, 3, 7, 9
-    assert_equal __, result
-=======
     result = my_global_method 2, 3
-    assert_equal 5, result
->>>>>>> Fixes def my_global_methods -- def test_calling_with_default_values.
+    assert_equal 5 , result
+    result = my_global_method 2, 3
   end
 
   # (NOTE: We are Using eval below because the example code is
@@ -78,7 +74,7 @@ class AboutMethods < EdgeCase::Koan
 
   def method_with_explicit_return
     :a_non_return_value
-    return :some_other_return_value
+    return :return_value
     :another_non_return_value
   end
 
@@ -134,13 +130,17 @@ class AboutMethods < EdgeCase::Koan
 
   class Dog
     def name
-      "Fido the Dog"
+      "Fido"
     end
 
-    def tail
-      "tail"
-    end
+  private
+
+  def tail
+    "tail"
   end
+
+end
+
 
   def test_calling_methods_in_other_objects_require_explicit_receiver
     rover = Dog.new
