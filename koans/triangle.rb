@@ -14,7 +14,7 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
-  while a + b + c == 180
+  #while a + b + c == 180
     if a == b && a == c
       return :equilateral
     elsif a == b || a == c || b == c
@@ -22,8 +22,8 @@ def triangle(a, b, c)
     else
       return :scalene
     end
-  end
-  return "That's not a triangle!"
+  #end
+  #return "That's not a triangle!"
 end
 
 # Error class used in part 2.  No need to change this code.
